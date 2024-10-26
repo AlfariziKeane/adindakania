@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    font-family: "Inter", sans-serif;
+}
+body {
+    background: #96CEB4;
+    margin: 0;
+    padding: 0;
+}
+.heart {
+    width: 180px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    background: #A02334;
+    transform-origin: right bottom;
+    transition: 1s;
+}
+.heart:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #FFAD60;
+    transition: 2s;
+    transform-origin: right bottom;
+}
+.heart:hover {
+    transform: rotate(45deg);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.heart:hover:before {
+    transform: rotate(450deg) translateY(100px);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background: #A02334;
+}
+h4{
+    position: absolute;
+    color: #A02334;
+    padding-left: 50px;
+    padding-top: 150px;
+}
+
